@@ -1,1 +1,95 @@
 
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #999999;
+    border: 2px solid #000000;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+
+/* Brand name */
+.navbar-default .navbar-brand {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation links */
+.navbar-default .navbar-nav > li > a {
+    color: #000000;
+    text-align: center;
+}
+
+/* Mobile dropdown button */
+.navbar-default .navbar-toggle {
+    border: 2px solid #000000;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #000000;
+}
+
+/* Page heading */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Menu sections */
+.menu-section {
+    background-color: #999999;
+    border: 2px solid #000000;
+    padding: 20px;
+    margin-bottom: 25px;
+    min-height: 1000px;
+}
+
+.menu-section h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.menu-section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+
+    .navbar-collapse {
+        border-top: 2px solid #000000;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .navbar-nav {
+        margin: 0;
+    }
+
+    .navbar-nav > li > a {
+        text-align: center;
+        border-bottom: 1px solid #000000;
+        font-size: 18px;
+    }
+
+    .navbar-default .navbar-collapse {
+        background-color: #ffffff;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
