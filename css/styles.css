@@ -1,5 +1,8 @@
 
-/* General page styling */
+/* =================================
+   GENERAL PAGE STYLING
+================================= */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
@@ -7,7 +10,11 @@ body {
     padding: 0;
 }
 
-/* Navigation bar */
+
+/* =================================
+   NAVIGATION BAR
+================================= */
+
 .navbar {
     background-color: #999999;
     border: 2px solid #000000;
@@ -15,81 +22,164 @@ body {
     margin-bottom: 20px;
 }
 
-/* Brand name */
+/* Food, LLC Brand */
+
 .navbar-default .navbar-brand {
     color: #000000;
     font-size: 24px;
     font-weight: bold;
 }
 
-/* Navigation links */
-.navbar-default .navbar-nav > li > a {
-    color: #000000;
-    text-align: center;
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #333333;
 }
 
-/* Mobile dropdown button */
+/* Hamburger Button */
+
 .navbar-default .navbar-toggle {
     border: 2px solid #000000;
+    background-color: transparent;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #000000;
 }
 
-/* Page heading */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #dddddd;
+}
+
+
+/* =================================
+   MOBILE DROPDOWN MENU
+================================= */
+
+.mobile-dropdown-menu {
+    background-color: #e7e7e7;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-top: 1px solid #cccccc;
+}
+
+.mobile-dropdown-menu > li {
+    width: 100%;
+}
+
+.mobile-dropdown-menu > li > a {
+    text-align: center;
+    color: #333333;
+    font-size: 18px;
+    padding: 15px 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+.mobile-dropdown-menu > li > a:hover,
+.mobile-dropdown-menu > li > a:focus {
+    background-color: #d4d4d4;
+    color: #000000;
+}
+
+
+/* =================================
+   PAGE HEADING
+================================= */
+
 h1 {
     font-size: 36px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-bottom: 30px;
+    text-align: center;
 }
 
-/* Menu sections */
+
+/* =================================
+   MENU SECTIONS
+================================= */
+
 .menu-section {
-    background-color: #999999;
-    border: 2px solid #000000;
+    min-height: 700px;
+    background-color: #f5f5f5;
+    border: 1px solid #000000;
+    border-radius: 4px;
     padding: 20px;
-    margin-bottom: 25px;
-    min-height: 1000px;
+    margin-bottom: 30px;
+    position: relative;
 }
 
-.menu-section h2 {
+.menu-section h3 {
     font-size: 26px;
     font-weight: bold;
     margin-top: 5px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .menu-section p {
     font-size: 16px;
     line-height: 1.6;
+    margin-top: 15px;
 }
 
-/* Mobile view */
+
+/* =================================
+   BACK TO TOP LINK
+================================= */
+
+.back-to-top {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #337ab7;
+}
+
+.back-to-top:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+
+/* =================================
+   MOBILE RESPONSIVE DESIGN
+================================= */
+
 @media (max-width: 767px) {
 
+    /* Mobile navbar dropdown */
+
     .navbar-collapse {
-        border-top: 2px solid #000000;
         padding-left: 0;
         padding-right: 0;
+        border-top: 1px solid #cccccc;
     }
 
     .navbar-nav {
         margin: 0;
+        width: 100%;
+    }
+
+    .navbar-nav > li {
+        width: 100%;
     }
 
     .navbar-nav > li > a {
         text-align: center;
-        border-bottom: 1px solid #000000;
-        font-size: 18px;
     }
 
-    .navbar-default .navbar-collapse {
-        background-color: #ffffff;
-    }
+    /* Mobile page heading */
 
     h1 {
         font-size: 30px;
+    }
+
+    /* Mobile menu sections */
+
+    .menu-section {
+        min-height: 700px;
+        margin-bottom: 25px;
     }
 }
